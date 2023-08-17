@@ -55,7 +55,7 @@ export class RoomsService {
   }
 
   findOne(id: string) {
-    this.rooms.find((room) => room.roomNumber === id);
+    return this.rooms.find((room) => room.roomNumber === id);
   }
 
   update(id: string, updateRoomDto: UpdateRoomDto) {
